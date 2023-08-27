@@ -1,0 +1,71 @@
+in order to understand what is happening in temp_con.cpp I will explain eacch line of code in detail.
+
+The first 3 lines in temp_con.cpp are:
+
+[#include <cstdio>
+#include <cstdlib>
+#include <iostream>(this one is important because most of the data that allows c++ to write programs are in iostream)]
+
+Most of these just include data that'll allow your program to work but remember that before any c++ program you write,
+always include iostream so that you don't get a pop up error!
+
+After the import of those important files next we add this:
+
+[using namespace std:]
+
+This allows us to write data types like string, double, char and bool without having to add std::string which makes the code much more readable.
+Not putting this in causes an error, atleast on my end where string isn't defined as a data type despite being one.
+
+After including namespace std we then move to the body or atleast the code that allows the body to run.
+Which is:
+
+int main(){}
+
+int: Declares a variable as an integer where the variable in this situation being [main], but all you need to know is that this
+line of code allows your program to work.
+
+Inbetween the 2 {} brackets are where you will write the rest of your code.
+
+Now we're getting to the fun part which is the actual code.
+
+int Celsius
+int Fahrenheit
+double Kelven
+
+are pretty easy to understand, int is there to indicate that the values of Celsius and Fahrenheit will be intigers.
+while the double value on Kelven will indicate that the value of Kelven will be a decimal point.
+
+Then we have the line of code that looks like this:
+
+cout << "Text:";
+cin >> (Variable);
+
+cout is basically what it's abbreviation says it is c meaning Character and out meaning Output
+so basically it outputs the characters
+
+while cout outputs a character that means cin will allow you to input a character, pretty easy to grasp once you understand
+
+next we have this line of code:
+
+(Variable) = integer +/- integer/ character
+
+This line of code basically explains it's self, the previous variable that you typed out, lets say (Celsius) will now be equal to what's after the equal sign
+in other words if you say Abby = 1 Abby's value will be 1, pretty easy concept so if you add a (+ - * /) sign that'll just add, subtract, multiply or divide
+the current value to the value or in this case variable of your choosing.
+
+and last but not least we have these lines of code:
+
+cout << "text:";
+cout << Variable << endl;
+
+and
+
+return 0;
+
+these lines aof code are pretty easy, the first one (cout << "text:";) does what i meantioned earlier, it outputs the characters onto the terminal.
+the second one (cout << Variable << endl) outputs the resulting value of said variable you inputed to the program earlier to the terminal
+then the (<< endl;) obviously ends the line of code there.
+
+then we have (return 0;) which returns a value of 0 if everything in the code runs correctly as it should, if it doesn't return 0 there is an error.
+
+
